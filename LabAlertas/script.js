@@ -4,7 +4,6 @@ let votos = {
   bd: 0,
   total: 0
 };
-
 const form = document.getElementById("formulario-votos");
 
 function votos(){
