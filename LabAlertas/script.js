@@ -9,6 +9,7 @@ const form = document.getElementById("formulario-votos");
 
 function votos(){
 alert("Gracias por tu voto!!");
+
 }
 
 
