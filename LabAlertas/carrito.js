@@ -6,14 +6,12 @@ function agregarProducto(nombre, precio) {
     totalItems++;
     totalPrecio += precio;
     carrito.push(nombre);
-
     document.getElementById("total-items").textContent = totalItems;
     document.getElementById("total-precio").textContent = totalPrecio;
 
     if (totalPrecio > 50) {
         alert("¡Envío gratis aplicado!");
-    }
-    
+    }    
     console.log("Productos en el carrito:", carrito);
 }
 
