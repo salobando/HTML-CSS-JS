@@ -1,4 +1,4 @@
-document.getElementById("titulo").innerHTML = "Ejercicio 1. Encuesta de intereses"
+
 let votos = {
   web: 0,
   js: 0,
@@ -28,10 +28,5 @@ form.addEventListener("submit", function (e) {
   }
 })
 
-document.getElementById("titulo").innerHTML = "Ejercicio 2. Carrito de compras"
-let productos = [
-  {nombre: "manzana",precio: 1800},
-  {nombre: "sandia",precio: 3500},
-  {nombre: "arandanos",precio: 6800}
-];
+
 
