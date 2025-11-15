@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de interes</title>
+</head>
+
+<body>
+    <main>
+        <form id="formulario-votos">
+            <h1>Eliga una opcion</h1>
+            <ul>
+                <label>
+                    <input type="radio" name="opcion" value="web"> Diseño Web
+                </label>
+                <label>
+                    <input type="radio" name="opcion" value="js"> JavaScript
+                </label>
+                <label>
+                    <input type="radio" name="opcion" value="bd"> Base de Datos
+                </label>
+            </ul>
+
+            <button type="submit" id="agregar" class="miBoton">Enviar</button>
+        </form>
+        <h1>Resultados:</h1>
+        <p>
+            <h3>Diseño web: <span id="vweb"></span></h3>
+            <h3>JavaScript: <span id="vjs"></span></h3>
+            <h3>Base de Datos: <span id="vbd"></span></h3>
+            <h3>Total Votos: <span id="total"></span></h3>
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
