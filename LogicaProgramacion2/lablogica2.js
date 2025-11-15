@@ -2,7 +2,6 @@ const prompt = require("prompt-sync")();
 
 function tiponum(temperatura) {
     let valor;
-
     // verificar si es valida la entrada
     while (true) {
         valor = prompt(temperatura);
