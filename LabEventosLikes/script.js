@@ -25,12 +25,23 @@ document.getElementById("publicar").addEventListener('click', function (e) {
     tit.textContent = titulo;
     const text = document.createElement("p");
     text.textContent = descri;
+    const btn = document.createElement("button");
+    btn.classList.add("like");
+    btn.innerHTML = "❤️";
     nuevaimg.src = URL.createObjectURL(imagenSeleccionada);
+    const likeCount = document.createElement("p");
+    likeCount.classList.add("count");
+    likeCount.textContent = "0";
 
+    btn.addEventListener('click', function () {
+        let valor = parseInt(likeCount.textContent);
+        likeCount.textContent = valor + 1;
+    })
     tarjeta.appendChild(tit);
     tarjeta.appendChild(text);
     tarjeta.appendChild(nuevaimg);
+    tarjeta.appendChild(likeCount);
+    tarjeta.appendChild(btn);
     
     document.getElementById("contenedor-publicaciones").appendChild(tarjeta);
-
 })

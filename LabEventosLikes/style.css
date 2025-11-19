@@ -7,7 +7,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 400px;
+    max-width: 80%;
+    border: 2px solid #1e808d; /* color borde*/
+    border-radius: 15px;        /* esquinas redondeadas */
+    padding: 40px;              /* espacio interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* sombra */
+    background-color: #f9f9f9;  /* fondo claro */
 }
 #formulario textarea{
     height: 100px;
@@ -26,13 +31,12 @@ body {
     margin-top: 10px;
 }   
 .contenedor-imagen:hover {
-    background-color: #eaf5d4;
+    background-color: #f7d5ba;
 }
 #preview {
     margin-top: 15px;
     max-width: 100%;
     border-radius: 10px;
-    display: block;
 }
 button{
     background-color: rgb(14, 50, 255);
@@ -42,16 +46,29 @@ button{
     border-radius: 10%;
 }
 /* Contenedor de publicaciones*/
-
 .tarjeta-pub {
     width: 300px;
-    background: #ffffff;
+    background: rgba(209, 209, 255, 0.911);
     padding: 15px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .tarjeta-pub img {
     width: 100%;
     border-radius: 8px;
 }
+
+.like {
+    background: beige;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: transform 0.2s ease;
+}
+
+.like:hover {
+    transform: scale(1.2);
+    background: rgb(49, 145, 255);
+}
+
