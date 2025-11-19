@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Publica tu imagen</h2>
+    <form action="" id="formulario">
+        <label for="">Título: </label>
+        <input type="text" id="titulo" placeholder="Agregue un título">
+        <label for="">Descripción: </label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escriba la descripcion de la foto"></textarea>
+        <label for="">Inserta la imagen</label>
+        <div class="contenedor-imagen">
+            <input type="file" id="imagen" accept="image/*">
+            <img id="preview" src="" alt="Vista previa" class="preview-hidden">
+        </div>
+        <button id="publicar" type="submit">Publicar</button>
+    </form>
+    <div>
+        <h1>Publicaciones</h1>
+        <div id="contenedor-publicaciones" class="publicaciones"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
