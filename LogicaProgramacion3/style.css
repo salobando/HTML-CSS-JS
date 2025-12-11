@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, sans-serif;
+    background: rgb(222, 224, 253);
+    margin: 50px;
+}
+
+h2{
+    text-align: center;
+    color: #660ef5;
+    margin-bottom: 20px
+}
+
+#numero{
+    border-radius: 8px;
+    transition: 0.3s;
+    padding: 5px 15px;
+}
+
+button{
+    border-radius: 8px;
+    background: #660ef5;
+    color: beige;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 15px;
+}
+
+button:hover{
+    background:#09fa76 ;
+}
